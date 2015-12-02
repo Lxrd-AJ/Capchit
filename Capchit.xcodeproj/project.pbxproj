@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		214AFE031C0D81C4000BFF08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE021C0D81C4000BFF08 /* AppDelegate.swift */; };
-		214AFE051C0D81C4000BFF08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE041C0D81C4000BFF08 /* ViewController.swift */; };
 		214AFE081C0D81C4000BFF08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214AFE061C0D81C4000BFF08 /* Main.storyboard */; };
 		214AFE0A1C0D81C4000BFF08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 214AFE091C0D81C4000BFF08 /* Assets.xcassets */; };
 		214AFE0D1C0D81C4000BFF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214AFE0B1C0D81C4000BFF08 /* LaunchScreen.storyboard */; };
+		214AFE151C0E40DF000BFF08 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */; };
+		214AFE171C0F808C000BFF08 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		214AFDFF1C0D81C4000BFF08 /* Capchit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capchit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		214AFE021C0D81C4000BFF08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		214AFE041C0D81C4000BFF08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		214AFE071C0D81C4000BFF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		214AFE091C0D81C4000BFF08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		214AFE0C1C0D81C4000BFF08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		214AFE0E1C0D81C4000BFF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				214AFE021C0D81C4000BFF08 /* AppDelegate.swift */,
-				214AFE041C0D81C4000BFF08 /* ViewController.swift */,
 				214AFE061C0D81C4000BFF08 /* Main.storyboard */,
 				214AFE091C0D81C4000BFF08 /* Assets.xcassets */,
 				214AFE0B1C0D81C4000BFF08 /* LaunchScreen.storyboard */,
 				214AFE0E1C0D81C4000BFF08 /* Info.plist */,
+				214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */,
+				214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */,
 			);
 			path = Capchit;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					214AFDFE1C0D81C4000BFF08 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 349P7P3B63;
 					};
 				};
 			};
@@ -135,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				214AFE051C0D81C4000BFF08 /* ViewController.swift in Sources */,
+				214AFE151C0E40DF000BFF08 /* CollectionViewController.swift in Sources */,
 				214AFE031C0D81C4000BFF08 /* AppDelegate.swift in Sources */,
+				214AFE171C0F808C000BFF08 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +254,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Capchit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheLeaf.Capchit;
@@ -260,6 +266,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Capchit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TheLeaf.Capchit;
