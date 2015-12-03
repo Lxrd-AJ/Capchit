@@ -16,7 +16,7 @@ class CollectionViewController: UICollectionViewController {
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     let screenHeight = UIScreen.mainScreen().bounds.height
-    let caps:[Int] = [Int](count: 6, repeatedValue: 10)
+    let caps:[Cap] = [Utilities.getExampleCap()]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +36,27 @@ class CollectionViewController: UICollectionViewController {
         return 1
     }
 
-
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return caps.count
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CollectionViewCell
-    
+        let cap = caps[indexPath.item]
+        
+        //UI Configurations
+        cell.backgroundColor = UIColor( red: 245/255, green: 245/255, blue: 245/255, alpha: 1 )
+        cell.layer.borderColor = UIColor( red: 245/255, green: 245/255, blue: 245/255, alpha: 0 ).CGColor
+        cell.layer.borderWidth = 1.1
+        cell.layer.cornerRadius = 5.0
+        cell.capImageView.layer.cornerRadius = cell.capImageView.frame.width / 2
+        cell.capImageView.clipsToBounds = true
+        //Data Configurations
+        cell.titleLabel.text = cap.title
+        cell.capImageView.image = cap.image
+        cell.capAudioIcon.hidden = false //(cap.audio == nil ? true : false)
+        cell.plusIcon.hidden = (cap.showPlusIcon ? false : true )
+        
         return cell
     }
     
@@ -61,7 +74,7 @@ class CollectionViewController: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, didHighlightItemAtIndexPath indexPath: NSIndexPath) {
         let cell = collectionView.cellForItemAtIndexPath(indexPath) as! CollectionViewCell
-        cell.contentView.alpha = 0.0
+        cell.contentView.alpha = 0.3
     }
     
     override func collectionView(collectionView: UICollectionView, didUnhighlightItemAtIndexPath indexPath: NSIndexPath) {

@@ -13,6 +13,8 @@
 		214AFE0D1C0D81C4000BFF08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214AFE0B1C0D81C4000BFF08 /* LaunchScreen.storyboard */; };
 		214AFE151C0E40DF000BFF08 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */; };
 		214AFE171C0F808C000BFF08 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */; };
+		2172FBDD1C10FF72003446AC /* Cap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172FBDC1C10FF72003446AC /* Cap.swift */; };
+		2172FBDF1C11007C003446AC /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2172FBDE1C11007C003446AC /* utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		214AFE0E1C0D81C4000BFF08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2172FBDC1C10FF72003446AC /* Cap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cap.swift; sourceTree = "<group>"; };
+		2172FBDE1C11007C003446AC /* utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				214AFE0E1C0D81C4000BFF08 /* Info.plist */,
 				214AFE141C0E40DF000BFF08 /* CollectionViewController.swift */,
 				214AFE161C0F808C000BFF08 /* CollectionViewCell.swift */,
+				2172FBDC1C10FF72003446AC /* Cap.swift */,
+				2172FBDE1C11007C003446AC /* utilities.swift */,
 			);
 			path = Capchit;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2172FBDD1C10FF72003446AC /* Cap.swift in Sources */,
+				2172FBDF1C11007C003446AC /* utilities.swift in Sources */,
 				214AFE151C0E40DF000BFF08 /* CollectionViewController.swift in Sources */,
 				214AFE031C0D81C4000BFF08 /* AppDelegate.swift in Sources */,
 				214AFE171C0F808C000BFF08 /* CollectionViewCell.swift in Sources */,
@@ -293,6 +301,7 @@
 				214AFE131C0D81C4000BFF08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
