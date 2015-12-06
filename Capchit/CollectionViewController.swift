@@ -28,7 +28,11 @@ class CollectionViewController: UICollectionViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
+        if segue.identifier == "showCapViewController" {
+            let destVC:CapViewController = segue.destinationViewController as! CapViewController
+            let indexPath = collectionView?.indexPathsForSelectedItems()![0]
+            destVC.cap = caps[indexPath!.item]
+        }
     }
 
     //UICollectionViewDataSource
@@ -49,12 +53,9 @@ class CollectionViewController: UICollectionViewController {
         cell.layer.borderColor = UIColor( red: 245/255, green: 245/255, blue: 245/255, alpha: 0 ).CGColor
         cell.layer.borderWidth = 1.1
         cell.layer.cornerRadius = 5.0
-        cell.capImageView.layer.cornerRadius = cell.capImageView.frame.width / 2
-        cell.capImageView.clipsToBounds = true
         //Data Configurations
         cell.titleLabel.text = cap.title
-        cell.capImageView.image = cap.image
-        cell.capAudioIcon.hidden = false //(cap.audio == nil ? true : false)
+        cell.titleLabel.sizeToFit()
         cell.plusIcon.hidden = (cap.showPlusIcon ? false : true )
         
         return cell

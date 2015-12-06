@@ -11,8 +11,6 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var capImageView: UIImageView!
-    @IBOutlet weak var capAudioIcon: UIImageView!
     @IBOutlet weak var plusIcon: UIImageView!
     
 }

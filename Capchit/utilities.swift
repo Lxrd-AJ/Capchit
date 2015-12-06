@@ -14,8 +14,8 @@ class Utilities {
     //returns a basic cap
     class func getExampleCap() -> Cap {
         let cap:Cap = Cap()
-        cap.title = "Example"
-        cap.description = "This is a sample cap"
+        cap.title = "This is a sample cap"
+        cap.description = "Example so long, it makes you think of what you had for breakfast"
         cap.image = UIImage(named: "Classroom")
         cap.showPlusIcon = true
         return cap
